@@ -1,0 +1,356 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+
+.test-steps {
+    display: flex;
+    flex-direction: row;
+}
+
+.test-steps-item {
+    display: grid;
+    grid-template-columns: 10px 1fr 50px;
+    gap: 15px;
+}
+
+.remove-me {
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 10px;
+    min-height: 36px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(12, 12, 13, .2);
+}
+
+.menu-items > div:first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.text-red {
+    color: red;
+}
+
+.menu-items > div:last-child {
+    margin-left: auto;
+    display: flex;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.accent {
+    background: dodgerblue !important;
+    color: white !important;
+    padding: 5px 10px;
+    border: 1px solid dodgerblue !important;
+    border-radius: 5px;
+}
+
+.accent-outer {
+    border: 1px solid dodgerblue !important;
+    color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.danger-outer {
+    border: 1px solid red !important;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+div.white-text {
+    color: white;
+}
+
+.gap-2 {
+    gap: .5rem;
+}
+
+.accent:hover {
+    background: royalblue !important;
+
+}
+
+.menu-items > div, .menu-items button, .bubble-menu button {
+    border: transparent;
+    background: transparent;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: black;
+
+}
+
+.menu-items > div > * {
+    height: 30px;
+    gap: 10px
+}
+
+.bubble-menu {
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    background: white;
+}
+
+span[comment_id] {
+    background: rgba(250, 250, 0, 0.25);
+    border-bottom: 2px rgb(255, 183, 0) solid;
+    user-select: all;
+    padding: 0 2px 0 2px;
+    border-radius: 4px;
+}
+
+/* Basic editor styles */
+.ProseMirror > * + * {
+    margin-top: 0.75em;
+}
+
+.ProseMirror pre {
+    background: #0D0D0D;
+    color: #FFF;
+    font-family: 'JetBrainsMono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.ProseMirror pre code {
+    color: inherit;
+    padding: 0;
+    background: none;
+    font-size: 0.8rem;
+}
+
+.ProseMirror pre .hljs-comment, .ProseMirror pre .hljs-quote {
+    color: #616161;
+}
+
+.ProseMirror pre .hljs-variable, .ProseMirror pre .hljs-template-variable, .ProseMirror pre .hljs-attribute, .ProseMirror pre .hljs-tag, .ProseMirror pre .hljs-name, .ProseMirror pre .hljs-regexp, .ProseMirror pre .hljs-link, .ProseMirror pre .hljs-selector-id, .ProseMirror pre .hljs-selector-class {
+    color: #F98181;
+}
+
+.ProseMirror pre .hljs-number, .ProseMirror pre .hljs-meta, .ProseMirror pre .hljs-built_in, .ProseMirror pre .hljs-builtin-name, .ProseMirror pre .hljs-literal, .ProseMirror pre .hljs-type, .ProseMirror pre .hljs-params {
+    color: #FBBC88;
+}
+
+.ProseMirror pre .hljs-string, .ProseMirror pre .hljs-symbol, .ProseMirror pre .hljs-bullet {
+    color: #B9F18D;
+}
+
+.ProseMirror pre .hljs-title, .ProseMirror pre .hljs-section {
+    color: #FAF594;
+}
+
+.ProseMirror pre .hljs-keyword, .ProseMirror pre .hljs-selector-tag {
+    color: #70CFF8;
+}
+
+.ProseMirror pre .hljs-emphasis {
+    font-style: italic;
+}
+
+.ProseMirror pre .hljs-strong {
+    font-weight: 700;
+}
+
+
+.drop-down-items {
+    position: absolute;
+    top: 30px;
+    background: white;
+    left: 0;
+    min-width: 150px;
+    z-index: 999;
+    border-radius: 5px;
+    border: 1px solid #213547;
+}
+
+.drop-down-items > div:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.holder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.rotate {
+    rotate: 90deg;
+}
+
+.is-active {
+    font-weight: bold;
+}
+
+.ProseMirror {
+    padding: 5px;
+}
+
+.drop-down {
+    position: relative;
+    margin: 5px;
+}
+
+table td {
+    min-width: 1vw;
+}
+
+div.devider {
+    width: 1px;
+    background: black;
+    height: 24px;
+    margin: auto 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+
+}
+
+.button-with-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+table th {
+    border-right: 1px solid rgba(12, 12, 13, 0.1);
+    border-bottom: 1px solid rgba(12, 12, 13, 0.1);
+    border-top: 1px solid rgba(12, 12, 13, 0.1);
+}
+
+table td {
+    border-right: 1px solid rgba(12, 12, 13, 0.1);
+    border-bottom: 1px solid rgba(12, 12, 13, 0.1);
+}
+
+table td:first-child,
+table th:first-child {
+    border-left: 1px solid rgba(12, 12, 13, 0.1);
+}
+
+#app {
+    margin: 0 auto;
+}
+
+.is-active path, .is-active g {
+    fill: gray;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: minmax(300px, 400px) 1fr;
+}
+
+.main.comments {
+    display: grid;
+    grid-template-columns: minmax(150px, 400px) 1fr minmax(150px, 400px);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.v-dropdown-trigger {
+    display: flex;
+    line-height: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.dropdown-items {
+    padding: 5px
+}
+
+.v-dropdown-container div.drowdown-item {
+    display: flex;
+    gap: 5px;
+    align-content: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.v-dropdown-container .drowdown-item:hover {
+    background: whitesmoke;
+}
+
+.ProseMirror {
+    min-height: 50vh;
+    padding: 1em;
+    height: 90vh;
+    overflow: auto;
+    position: relative;
+}
