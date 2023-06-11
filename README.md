@@ -1,5 +1,11 @@
-Note: This license has also been called the “Simplified BSD License” and the “FreeBSD License”. See also the 3-clause
-BSD License.
+To do
+
+- add image upload 
+- add image manipulation 
+- add colaboratevie editing 
+
+
+# Licence 
 
 Copyright 2023 Radan Stupar
 
